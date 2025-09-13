@@ -144,7 +144,7 @@ services:
     volumes:
       - ./config/homer:/www/assets
     ports:
-      - 8080:8080
+      - 8118:8080
     environment:
       - INIT_ASSETS=1 
     restart: unless-stopped

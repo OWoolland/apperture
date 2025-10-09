@@ -72,6 +72,8 @@ services:
       AUTHELIA_STORAGE_ENCRYPTION_KEY_FILE: '/run/secrets/AUTHELIA_STORAGE_ENCRYPTION_KEY'
       AUTHELIA_AUTHENTICATION_BACKEND_LDAP_PASSWORD_FILE: '/run/secrets/LLDAP_PASSWORD'
       URL: ${URL}
+      AUTHELIA_NTP_DISABLE_STARTUP_CHECK: True
+      AUTHELIA_NTP_DISABLE_FAILURE: True
     networks:
       apperture:
     command: ["authelia", "--config.experimental.filters", "template"]

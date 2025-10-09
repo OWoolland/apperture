@@ -15,6 +15,17 @@ secrets:
     file: ${PWD}/config/lldap/secrets/LLDAP_STORAGE_PASSWORD
 
 services:
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    container_name: apperture-cloudflared
+    restart: unless-stopped
+    environment:
+      TUNNEL_TOKEN=${CLOUDFLARED_TOKEN}
+    command:
+      tunnel --no-autoupdate run
+    networks:
+      apperture:
+      
   proxy:
     build:
       context: ./

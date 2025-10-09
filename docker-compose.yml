@@ -20,7 +20,7 @@ services:
     container_name: apperture-cloudflared
     restart: unless-stopped
     environment:
-      TUNNEL_TOKEN=${CLOUDFLARED_TOKEN}
+      TUNNEL_TOKEN: ${CLOUDFLARED_TOKEN}
     command:
       tunnel --no-autoupdate run
     networks:

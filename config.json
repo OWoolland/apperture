@@ -43,6 +43,28 @@
       "forward_port": 8123,
       "auth": true,
       "ssl": true
+    },
+    {
+      "name": "Gate",
+      "icon": "fa-solid fa-torii-gate",
+      "subdomain": "gate",
+      "group": "Apps",
+      "description": "",
+      "forward_host": "bitwarden",
+      "forward_port": 2345,
+      "auth": true,
+      "ssl": true
+    },
+    {
+      "name": "Komodo",
+      "icon": "fa-solid fa-dragon",
+      "group": "Admin",
+      "description": "Deployment Interface",
+      "subdomain": "komodo",
+      "forward_host": "komodo-core-1",
+      "forward_port": 9120,
+      "auth": true,
+      "ssl": true
     }
   ]
 }

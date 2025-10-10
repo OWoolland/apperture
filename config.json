@@ -51,7 +51,7 @@
       "group": "Apps",
       "description": "",
       "forward_host": "bitwarden",
-      "forward_port": 2345,
+      "forward_port": 8080,
       "auth": true,
       "ssl": true
     },

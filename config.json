@@ -61,7 +61,7 @@
       "group": "Admin",
       "description": "Deployment Interface",
       "subdomain": "komodo",
-      "forward_host": "komodo-core-1",
+      "forward_host": "komodo-core",
       "forward_port": 9120,
       "auth": true,
       "ssl": true

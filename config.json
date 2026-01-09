@@ -65,6 +65,17 @@
       "forward_port": 9120,
       "auth": true,
       "ssl": true
+    },
+    {
+      "name": "CCTV",
+      "icon": "fa-solid fa-video",
+      "group": "Apps",
+      "description": "CCTV from Frigate",
+      "subdomain": "cctv",
+      "forward_host": "172.27.36.139",
+      "forward_port": 5000,
+      "auth": true,
+      "ssl": true
     }
   ]
 }
